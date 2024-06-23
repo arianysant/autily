@@ -2,5 +2,5 @@
 #AUTILY
 SITE AUTILY:
 
- https://arianysant.github.io/autily/site_responsivo/index.html/
+ https://arianysant.github.io/autily/site_responsivo/index.html
 
