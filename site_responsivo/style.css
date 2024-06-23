@@ -61,7 +61,7 @@ nav ul button{
     border-radius: 5px;
     font-size: 16px;
     letter-spacing: 1px;;
-    background-color: aquamarine;
+    background-color: #65B7F6;
     margin-left: 14px;
     cursor: pointer;
 }
@@ -83,7 +83,8 @@ main{
 }
 
 .text-bx h1 b{
-    color: aqua;
+    color: #65B7F6
+    
 }
 
 .text-bx p{
@@ -98,5 +99,98 @@ main{
 }
 
 .text-bx .input.bx input{
+ width: 60%;
+ display: block;
+ height: 50px;
+ padding: 10px;
+ border: none;
+ outline: none;
+ color: rgb(33, 0, 151);
+ font-size: 16px;
+}
+
+.text-bx .input.bx input::placeholder{
+    color: rgb(33, 0, 151); 
+}
+
+.text-bx .input-bx button{
+    outline:none;
+    border:none;
+    padding: 10px 15px;
+    background-color: #65B7F6;
+    color:white;
+    cursor: pointer;
+    font-size: 15px;
 
 }
+.sociais{
+    margin-top: 30px;
+}
+
+.sociais i{
+    font-size: 23px;
+    margin: 0 3px;
+    color: white;
+    background-color: #65B7F6;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.img-bx img{
+    width: 100%;
+}
+
+@media (max-width:970px){
+    nav .menu-icon{
+        display:block;
+    }
+    nav ul{
+        position:fixed;
+        width: 60%;
+        height: 100%;
+        top:0;
+        left:0;
+        transform: translateX(-100%);
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: 0.3s ease-in;
+        background-color: #65B7F6;
+    }
+
+    nav ul.active{
+        transform: translateX(0);
+    }
+    
+    nav ul li{
+        padding: 10px;
+    }
+
+    nav ul a{
+        font-size: 15px;
+        color: white;
+    }
+
+    nav ul button{
+        background-color: blue;
+        font-size:10px;
+        margin:10px;
+    }
+    main{
+        flex-direction: column;
+    }
+
+    .text-bx,
+    .img-bx{
+       width:100%;
+       text-align: center; 
+    }
+    .text-bx{
+        margin-bottom: 40px;
+    }
+    .text-bx .input-bx{
+        justify-content: center;
+    }
+}
+
